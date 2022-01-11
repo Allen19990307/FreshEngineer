@@ -1,3 +1,7 @@
+package view;
+
+import dao.function;
+
 import java.util.Scanner;
 
 /**
@@ -17,7 +21,7 @@ public class view {
         }else{
             System.out.println("追求卓越方有传奇,我们高处相见");
         }
-
+        function.CsFunction();
 
     }
 }
