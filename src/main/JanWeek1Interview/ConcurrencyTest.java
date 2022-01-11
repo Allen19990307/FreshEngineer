@@ -33,6 +33,9 @@ public class ConcurrencyTest {
         System.out.println("concurrency "+res+ " ms,b = "+b);
     }
     public static void serial(){
+        long start = System.currentTimeMillis();
+        int a = 0 ;
+
 
     }
 
