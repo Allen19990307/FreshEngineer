@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @Author:Allen
- * @Descrition:
+ * @Descrition: 常见的数据结构需要掌握
  * @Date:1/10/2022 10:50 AM
  */
 public class test {

@@ -6,10 +6,11 @@ package JanWeek1Interview;
  * @Date:1/11/2022 9:41 PM
  */
 public class ConcurrencyTest {
-    private static final long count = 100001;
+    private static final long count = 10000001;
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws InterruptedException {
+       concurrency();
+       serial();
     }
     /*并发编程的情况*/
     public static void concurrency() throws InterruptedException {
@@ -35,8 +36,15 @@ public class ConcurrencyTest {
     public static void serial(){
         long start = System.currentTimeMillis();
         int a = 0 ;
-
-
+        for(long i = 0 ; i < count ; i++){
+             a += 5;
+        }
+        int b = 0;
+        for(long i = 0 ; i < count ;i++){
+             b --;
+        }
+        long l = System.currentTimeMillis() - start;
+        System.out.println("Serial "+ l+" ms,b= "+b);
     }
 
 
