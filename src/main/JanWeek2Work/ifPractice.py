@@ -103,12 +103,63 @@ if __name__ == '__main__':
    #     print('Are you want to touch fish?')
 
    #eg.12 Provide and need balance
-    request_conditions = ['beef','rice','corn','spaghetti']
-    provide_conditions = ['beef','rice','potato','milk']
-    for request in request_conditions:
-        if(request in provide_conditions):
-            print(f'{request} add.')
-        else:
-            print(f'Execuse me,we didn\'t have {request}')
-    print(f'Things are done.')
+   # request_conditions = ['beef','rice','corn','spaghetti']
+   # provide_conditions = ['beef','rice','potato','milk']
+   # for request in request_conditions:
+   #     if(request in provide_conditions):
+   #         print(f'{request} add.')
+   #     else:
+   #         print(f'Execuse me,we didn\'t have {request}')
+   # print(f'Things are done.')
 
+   #eg.13 Design Course
+   # Stanford = ['Evaluate','Compass','Way','Dilemma','Prototype','Offer','Design','Active','Imunity']
+   # Stanford = []
+   # if Stanford:
+   #     for step in Stanford:
+   #         if(step == 'Evaluate'):
+   #             print(f'Hello,would you like to make a life change? {step} Now')
+   #         else:
+   #             print(f'Now,you can have a {step}')
+   #     print('Life can be designed like what you desire.')
+   # else:
+   #     print('Just go and enjoy your life!')
+
+  #eg.14 Users 去除重复的部分
+   # Current_Users = ['Jimmy','Allen','Blair','Cathy','Dorothy']
+   # New_Users =['Ethan','Frank','Gorge','Helen','Allen']
+   # Current_Users1 = [i.lower() for i in Current_Users]
+   # for newUsers in New_Users:
+   #     if newUsers.lower() in Current_Users1:
+   #         print(f'{newUsers} has been used.')
+   #     else:
+   #         print(f'{newUsers} hasn\'t been used.')
+   # print('Work is done.')
+
+   #eg.15 Number compare
+   # number = [i for i in range(1,10)]
+   # for num in number:
+   #     if num == 1:
+   #         print('1st')
+   #     elif num == 2:
+   #         print('2nd')
+   #     elif num == 3:
+   #         print('3rd')
+   #     elif num == 4:
+   #         print('4th')
+   #     elif num == 5:
+   #         print('5th')
+   #     elif num == 6:
+   #         print('6th')
+   #     elif num == 7:
+   #         print('7th')
+   #     elif num == 8:
+   #         print('8th')
+   #     else:
+   #         print('9th')
+
+   #eg.16 Think different
+   ideas = ['life pattern design','basic knowlegde','algotithm','sharpen tools']
+   print(f'很高兴和你一起升级带怪,在开发的道路上，希望我们能够走得更加稳健')
+   for idea in ideas:
+       print({idea})
