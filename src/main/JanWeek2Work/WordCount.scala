@@ -13,7 +13,7 @@ object WordCount {
     val sparkConf = new SparkConf().setAppName("WorkTime").setMaster("local[*]")
     val sparkContext = new SparkContext(sparkConf)
     sparkContext.setLogLevel("warn")
-    val rootValue  = sparkContext.textFile("D:\\Allen‘s repository\\FreshEngineer\\src\\resource\\dreamCatcher.txt")
+    val rootValue  = sparkContext.textFile("src/resource/dreamCatcher.txt")
     val SplitValue1 = rootValue.flatMap(line => line.split(" "))
     val CountValue1 = SplitValue1.map(x => {
       (x, 1)
