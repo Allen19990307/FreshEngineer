@@ -42,7 +42,107 @@ if __name__ == '__main__':
     #     print("您输入了一个10的倍数")
     # else:
     #     print("您尚且没有输出10的倍数")
-    dictionary = 110
-    while dictionary < 135:
-        print('take challenge.')
-        dictionary += 10
+    # dictionary = 110
+    # while dictionary < 135:
+    #     print('take challenge.')
+    #     dictionary += 10
+
+    #eg.8 输入检验
+    # prompt = "\n Will is everything. "
+    # prompt += "\n Action speaks louder than words."
+    # prompt += "\n PLease input your desire.\n"
+    # message = ""
+    # while message != "quit":
+    #     message = input(prompt)
+    #     if message != 'quit':
+    #         print(message)
+
+    #eg.9 flag 标志符检验
+    # prompt = '\n core competence'
+    # prompt += '\n data etl'
+    # prompt += '\n input something you need to practice .'
+    # flag =True
+    # while flag:
+    #     s = input(prompt)
+    #     if s =='quit':
+    #         print('learn how to find your main task\n')
+    #     else:
+    #        print('Deliberate practice more\n')
+
+    #eg.10 flag 标志符检验
+    # prompt = "Tell me which city do you want to go."
+    # prompt += "\n input here."
+    # message = ""
+    # while True:
+    #     message = input(prompt)
+    #     if message != "quit":
+    #         print(f"You want to go to {message},right?")
+    #     elif message == "quit":
+    #         print(f"See you")
+    #         break;
+
+    #eg.11 循环使用 continue,跳出当前循环
+    # current_number = 0
+    # while current_number < 10:
+    #     current_number += 1
+    #     if current_number % 2 == 0:
+    #         continue
+    #     print(current_number)
+
+   #eg.12 Pizza
+   # info = "Please input something you want in the pizza\n"
+   # Pizza = []
+   # message = ""
+   # while True:
+   #     message = input(info)
+   #     if(message == "quit"):
+   #         print("bye")
+   #         break
+   #     else:
+   #         Pizza.append(message)
+   #         print(f"You put {message},right?")
+   # print(f"In pizza,you put: ")
+   # for i in Pizza:
+   #      print(f"{i}")
+
+   #eg.12 Tickets
+   # info = "To help you better get a reasonable ticket,we need you to input your age.\n"
+   # print(info)
+   # message =""
+   # while True:
+   #     s = input(message)
+   #     if int(s) in range(1,3):
+   #         print('Charge free')
+   #         break
+   #     elif int(s) in range(3,12):
+   #         print('10 $')
+   #         break
+   #     elif int(s) > 12:
+   #         print('15 $')
+   #         break
+
+   #eg.13 active  python中的常见浮点型的操作方式
+   # printInfo = "What's your age?\n"
+   # message1 = ""
+   # active = True
+   # while active:
+   #     message1 = input(printInfo)
+   #     if float(message1) in range(0,3):
+   #         print(" 0 $")
+   #     elif  float(message1) in range(2,13):
+   #         print(" 10 $")
+   #     elif  float(message1) > 12:
+   #         print("15 $")
+   #     elif message1 == 'quit':
+   #         active =False
+   #     else:
+   #         print("You input a wrong number,please input again.")
+
+   #eg.14 使用while循环处理列表和字典
+   unconfirmed_users = ['Rakesh Agrawal','Jiawei Han','Jon Kleinberg','Qiang Yang','Wei Wang','Zhou Zhihua']
+   confirmed_users = []
+   while unconfirmed_users:
+       current_users = unconfirmed_users.pop()
+       print(f"\n verifying users.{current_users}")
+       confirmed_users.append(current_users)
+   print(confirmed_users)
