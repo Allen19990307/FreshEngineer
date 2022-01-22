@@ -138,11 +138,63 @@ if __name__ == '__main__':
    #     else:
    #         print("You input a wrong number,please input again.")
 
-   #eg.14 使用while循环处理列表和字典
-   unconfirmed_users = ['Rakesh Agrawal','Jiawei Han','Jon Kleinberg','Qiang Yang','Wei Wang','Zhou Zhihua']
-   confirmed_users = []
-   while unconfirmed_users:
-       current_users = unconfirmed_users.pop()
-       print(f"\n verifying users.{current_users}")
-       confirmed_users.append(current_users)
-   print(confirmed_users)
+   #eg.14 使用while循环处理列表和字典,姓名
+   # unconfirmed_users = ['RakeshAgrawal','JiaweiHan','JonKleinberg','QiangYang','WeiWang','ZhouZhihua']
+   # confirmed_users = []
+   # while unconfirmed_users:
+   #     current_users = unconfirmed_users.pop()
+   #     print(f" verifying users.{current_users.title()}")
+   #     confirmed_users.append(current_users)
+   #     print("The following users have been confirmed.")
+   # for confirmed in confirmed_users:
+   #     print(confirmed.title())
+
+   #eg.15 去除列表中重复的元素
+   # skills = ['python','api','web','nginx','import','process','api']
+   # while 'api' in skills:
+   #     skills.remove('api')
+   # print(skills)
+
+   #eg.16 最喜欢的内容填入词典
+   # response = {}
+   # name = "Please input your name."
+   # see = " favourite mountain that you want to see"
+   # flag = True
+   # while flag:
+   #     user = input(name)
+   #     mountain = input(see)
+   #     response[user] = mountain
+   #     s = input("Do anyone want to input goal,please input yes or no?")
+   #     if s == 'no':
+   #         flag = False
+
+   #eg.17 最喜欢的books定制
+   # books_orders = ['pattern','experience','attitude']
+   # unorderedBooks =[]
+   # while books_orders:
+   #     book = books_orders.pop()
+   #     print(f"\n verifying {book}")
+   #     unorderedBooks.append(book)
+   # print(f"books purchased {unorderedBooks}")
+
+   #eg.18 最喜欢的三明治定制
+   # sandwich_Orders ={'Herby chicken','Pesto focaccia','Quattro formaggi grilled cheese','pastrami','pastrami','pastrami'}
+   # while 'pastrami' in sandwich_Orders:
+   #      sandwich_Orders.remove('pastrami')
+   # print('pastrami ran out.')
+   # print(sandwich_Orders)
+
+   #eg.19 最喜欢的度假地点的定制
+   place1 = "Please input your name"
+   place = "where place do you want to go"
+   holiday = {}
+   flag = True
+   while flag:
+       s = input(place1)
+       s1 = input(place)
+       holiday[s] = s1
+       s2 = input("Do you have something to do?")
+       if s2 == 'No':
+           flag = False
+   for k,v in holiday.items():
+        print(f"{k} ideal holiday site is {v}")
