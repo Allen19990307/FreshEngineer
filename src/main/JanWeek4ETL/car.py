@@ -1,4 +1,5 @@
 class Car:
+    """汽车类的基本属性"""
     def __init__(self,make,model,year):
         self.make = make
         self.model = model
